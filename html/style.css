@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    display: none;
+    height: 70vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    border-radius: 15px;
+    color: white;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 35px;    
+    background-color: black;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.header h1 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+    font-size: 2.8em;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.player-info {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, rgba(26, 115, 232, 0.15) 0%, rgba(26, 115, 232, 0.05) 100%);
+    padding: 15px 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(26, 115, 232, 0.2);
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.info-item i {
+    color: #1a73e8;
+    font-size: 1.4em;
+}
+
+.info-item span {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.jobs-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.jobs-container h2 {
+    color: #1a73e8;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 10px;
+}
+
+.job-card {
+    background: linear-gradient(135deg, rgba(26, 115, 232, 0.1) 0%, rgba(26, 115, 232, 0.05) 100%);
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid rgba(26, 115, 232, 0.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.job-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(26, 115, 232, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+.job-card:hover::before {
+    transform: translateX(100%);
+}
+
+.job-card:hover {
+    background: rgba(26, 115, 232, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(26, 115, 232, 0.2);
+}
+
+.job-card i {
+    font-size: 2.2em;
+    color: #1a73e8;
+    margin-bottom: 15px;
+    background: rgba(26, 115, 232, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.job-card:hover i {
+    transform: scale(1.1);
+}
+
+.job-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.job-card p {
+    color: #94a3b8;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.job-card .salary {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.close-btn {
+    background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 1.1em;
+    min-width: 150px;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.close-btn:hover {
+    background: linear-gradient(135deg, #1557b0 0%, #1a73e8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.3);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(26, 115, 232, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(26, 115, 232, 0.5);
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .player-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .info-item {
+        justify-content: center;
+    }
+}
