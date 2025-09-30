@@ -32,6 +32,34 @@ Config.Jobs = {
         description = "Repair vehicles at the workshop",
         icon = "fas fa-wrench"
     },
+        {
+        name = "mechanic",
+        label = "Mechanic",
+        salary = 2000,
+        description = "Repair vehicles at the workshop",
+        icon = "fas fa-wrench"
+    },
+        {
+        name = "mechanic",
+        label = "Mechanic",
+        salary = 2000,
+        description = "Repair vehicles at the workshop",
+        icon = "fas fa-wrench"
+    },
+        {
+        name = "mechanic",
+        label = "Mechanic",
+        salary = 2000,
+        description = "Repair vehicles at the workshop",
+        icon = "fas fa-wrench"
+    },
+        {
+        name = "mechanic",
+        label = "Mechanic",
+        salary = 2000,
+        description = "Repair vehicles at the workshop",
+        icon = "fas fa-wrench"
+    },
     {
         name = "ambulance",
         label = "Doctor",

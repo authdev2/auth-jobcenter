@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Figtree", sans-serif;
     display: none;
-    height: 70vh;
 }
 
 .container {
@@ -21,6 +25,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 35px;    
     background-color: black;
+    padding: 20px;
 }
 
 .header {
@@ -32,10 +37,8 @@ body {
 .header h1 {
     color: #1a73e8;
     margin-bottom: 20px;
-    font-size: 2.8em;
-    font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    letter-spacing: 1px;
+    font-size: 2.4em;
+    font-weight: 900;
 }
 
 .player-info {
@@ -75,10 +78,11 @@ body {
 }
 
 .jobs-container {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
     margin-bottom: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding-right: 10px;
 }
 
 .jobs-container h2 {
@@ -94,7 +98,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    padding: 10px;
 }
 
 .job-card {
@@ -132,7 +135,7 @@ body {
 
 .job-card i {
     font-size: 2.2em;
-    color: #1a73e8;
+    color: #ccd1d6;
     margin-bottom: 15px;
     background: rgba(26, 115, 232, 0.1);
     padding: 15px;
@@ -159,7 +162,7 @@ body {
 }
 
 .job-card .salary {
-    color: #ffffff;
+    color: #1a73e8;
     font-weight: 600;
     font-size: 1.1em;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
